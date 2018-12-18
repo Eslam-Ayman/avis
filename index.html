@@ -1,0 +1,875 @@
+<!-- https://codepen.io/michaelsmyth94/pen/wMJLaj -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid" style="padding: 0;">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <p style="transform:skew(30deg); margin:0px">القائمة</p>
+              <!-- <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> -->
+            </button>
+            <a class="navbar-brand" href="#" style="transform:skew(30deg); background-image:url('img/logo.png'); background-size: 100% 100%;    width: 75px;"></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class=" collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><p style="float:right">اتصل بنا</p><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Action</a></li>
+              </ul>
+            </li>
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><p style="float:right">التوظيف</p><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Action</a></li>
+              </ul>
+            </li>
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><p style="float:right">الشركاء</p><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Action</a></li>
+              </ul>
+            </li>
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><p style="float:right">المركز الاعلامى</p><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Action</a></li>
+              </ul>
+            </li>
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><p style="float:right">شركات الموجموعة</p><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Action</a></li>
+              </ul>
+            </li>
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><p style="float:right">عن الموجموعة</p><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Action</a></li>
+              </ul>
+            </li>
+              <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><p style="float:right">الرئيسية</p><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Action</a></li>
+              </ul>
+            </li>
+                
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+      <div  class="carousel slide first-section" data-ride="carousel">
+          <!-- Indicators -->
+          <!-- <ol class="carousel-indicators visible-sm-block visible-md-block visible-lg-block">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+          </ol>
+ -->       
+    <!-- <ul  class="slick-dots carousel-indicator visible-sm-block visible-md-block visible-lg-block" style="display: block;" role="tablist">
+      <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation00" id="slick-slide00">
+        
+      </li>
+            <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01" id="slick-slide01" class=""></li>
+            <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation02" id="slick-slide02" class=""></li>
+            <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation03" id="slick-slide03" class=""></li>
+            <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation04" id="slick-slide04" class=""></li>
+            <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation05" id="slick-slide05" class=""></li>
+          </ul> -->
+          <ul class="three-links">
+            <li><a href="#" style="background-image: url('img/EN.png');"></a></li>  
+            <li><a href="#" style="background-image: url('img/network.png');"></a></li>  
+            <li><a href="#" style="background-image: url('img/home.png');"></a></li>  
+          </ul>
+
+          <ol class="slick-dots visible-sm-block visible-md-block visible-lg-block" style="display: block;  bottom: 35px;" role="tablist">
+          <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation00" id="slick-slide00"><button type="button" data-role="none" role="button" tabindex="0">1</button></li>
+          <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01" id="slick-slide01" class=""><button type="button" data-role="none" role="button" tabindex="0">2</button></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <!-- <div class="my-single-item carousel-inner" role="listbox"> -->
+          <div class="my-single-item ">
+            <div class="item active first-slid">
+              <!-- <img src="img/car.png" alt="..." class="img-responsive" height="640px"> -->
+              <div class="carousel-caption">
+                <span style="font-size: x-large;">ايفس لتأجير السيارات</span>  <br />
+                تعتبر شكرة آيفس السعودية احدى الشركات الرائدة <br />
+                في مجال تأجير السيارات على مستوى الدولة و تتمتع <br />
+                بمتابعة جيدة من العملاء ، الأفراد و كذلك الشركات <br />
+                فلدينا شبكة واسعة النطاق من... 
+                <a href="#">المزيد</a>
+              </div>
+            </div>
+
+
+
+            <div class="item active">
+              <!-- <img src="img/car.png" alt="..." class="img-responsive" height="640px"> -->
+              <iframe width="100%" height="640" src="https://www.youtube.com/embed/5kdxXtGCcqU" frameborder="0" allowfullscreen></iframe>
+              
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a> -->
+      </div>
+
+      <div class="container-fluid second-section">
+        <div class="row">
+          <div class="col-sm-6 cars visible-sm-block visible-md-block visible-lg-block"></div>
+          <div class="col-sm-6 try">
+            <div class="element"></div>
+            <div class="skew">
+            <h1>ايفس لتأجير السيارات</h1>
+            <p>تعتبر شكرة آيفس السعودية احدى الشركات النطاق من تعتبر الرائدة<br />
+            في مجال تأجير السيارات على مستوى الدولة النطاق من تعتبر و تتمتع<br />
+            بمتابعة جيدة من العملاء ، الأفراد و كذلك النطاق من تعتبر الشركات<br />
+            فلدينا شبكة واسعة النطاق من تعتبر النطاق من تعتبر شكرة آيفس السعودية<br />
+            تعتبر شكرة آيفس السعودية احدى الشركات النطاق من تعتبر الرائدة<br />
+            في مجال تأجير السيارات على مستوى الدولة النطاق من تعتبر و تتمتع<br />
+            بمتابعة جيدة من العملاء ، الأفراد و كذلك .<br /> 
+            فلدينا شبكة واسعة النطاق </p>
+            <a href="#"><span style="display: block; transform: skew(-30deg)"> المزيد </span></a>
+          </div> <!-- the end of skew -->
+          </div> <!-- the end of skew -->
+        </div>
+      </div>
+
+      <div class="container-fluid third-section">
+        <div class="row">
+          <div class="col-xs-6 col-sm-3 man">
+            <div class="thumbnail">
+              <img src="img/man.png" alt="...">
+              <div class="caption">
+                <h3>تعتبر شكرة آيفس السعودية احدى الشركات الرائدة في مجال تأجير</h3>
+                <p><a href="#" class="btn btn-default" role="button">المزيد...</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3 car">
+            <div class="thumbnail">
+              <img src="img/red-car.png" alt="...">
+              <div class="caption">
+                <h3>تعتبر شكرة آيفس السعودية احدى الشركات الرائدة في مجال تأجير</h3>
+                <p><a href="#" class="btn btn-default" role="button">المزيد...</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 visible-sm-block visible-md-block visible-lg-block">
+            <div class="thumbnail">
+              <img src="img/orange-car.png" alt="...">
+              <div class="caption">
+                <h3>تعتبر شكرة آيفس السعودية احدى الشركات الرائدة في مجال تأجير</h3>
+                <p><a href="#" class="btn btn-default" role="button">المزيد...</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <div class="thumbnail">
+                <h4>العنوان : الرياض حي السفارات خلف القنصلية المصرية</h4>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13810.09229381278!2d31.200263500000005!3d30.079202399999996!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1484355136080" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div class="caption capt">
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1"><button style="margin:0px; transform: skew(-30deg);background-color:transparent;border: none;">إرسال</button></span>
+                  <input type="text" class="form-control" placeholder="لإشترك بقائمتنا البريدية" aria-describedby="basic-addon1">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="overflow: hidden;">
+        <!-- Indicators -->
+        <ol class="carousel-indicators success" >
+         <p>شركاء النجاح</p>
+          <!--<li class="sucess"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+        </ol> 
+        <ol class="carousel-indicators visible-xs-block success success-2" >
+         <p>شركاء النجاح</p>
+         </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="container-fluid">
+              <!-- <div class="row my-autoplay"> -->
+              <!-- <marquee direction="right" class="row"> -->
+              <div class="slick marquee">
+  <div class="slick-slide ltr">
+    <div class="inner">
+      <img src="img/slide.png" alt="Placeholder" width="179" height="78"/>
+      <p>DESIGN PROJECTS</p>
+    </div>
+  </div>
+  <div class="slick-slide ltr">
+    <div class="inner">
+      <img src="img/slide.png" alt="Placeholder" width="179" height="78"/>
+      <p>DESIGN PROJECTS</p>
+    </div>
+  </div>
+  <div class="slick-slide ltr">
+    <div class="inner">
+      <img src="img/slide.png" alt="Placeholder" width="179" height="78"/>
+      <p>DESIGN PROJECTS</p>
+    </div>
+  </div>
+  <div class="slick-slide ltr">
+    <div class="inner">
+      <img src="img/slide.png" alt="Placeholder" width="179" height="78"/>
+      <p>DESIGN PROJECTS</p>
+    </div>
+  </div>
+  <div class="slick-slide ltr">
+    <div class="inner">
+      <img src="img/slide.png" alt="Placeholder" width="179" height="78"/>
+      <p>DESIGN PROJECTS</p>
+    </div>
+  </div>
+  <div class="slick-slide ltr">
+    <div class="inner">
+      <img src="img/slide.png" alt="Placeholder" width="179" height="78"/>
+      <p>DESIGN PROJECTS</p>
+    </div>
+  </div>
+  <div class="slick-slide ltr">
+    <div class="inner">
+      <img src="img/slide.png" alt="Placeholder" width="179" height="78"/>
+      <p>DESIGN PROJECTS</p>
+    </div>
+  </div>
+  <div class="slick-slide ltr">
+    <div class="inner">
+      <img src="img/slide.png" alt="Placeholder" width="179" height="78"/>
+      <p>DESIGN PROJECTS</p>
+    </div>
+  </div>
+  <div class="slick-slide ltr">
+    <div class="inner">
+      <img src="img/slide.png" alt="Placeholder" width="179" height="78"/>
+      <p>DESIGN PROJECTS</p>
+    </div>
+  </div>
+  <div class="slick-slide ltr">
+    <div class="inner">
+      <img src="img/slide.png" alt="Placeholder" width="179" height="78"/>
+      <p>DESIGN PROJECTS</p>
+    </div>
+  </div>
+</div>
+                <!-- <div class="col-xs-4 col-sm-2 col">
+                  <img src="img/slide.png" class="img-responsive">
+                  <p>DESIGN PROJECTS</p>
+                </div>
+                <div class="col-xs-4 col-sm-2 col">
+                  <img src="img/slide.png" class="img-responsive">
+                  <p>DESIGN PROJECTS</p>
+                </div>
+                <div class="col-xs-4 col-sm-2 col">
+                  <img src="img/slide.png" class="img-responsive">
+                  <p>DESIGN PROJECTS</p>
+                </div>
+                <div class="col-xs-3 col-sm-2 col ">
+                  <img src="img/slide.png" class="img-responsive">
+                  <p>DESIGN PROJECTS</p>
+                </div>
+                <div class="col-xs-3 col-sm-2 col">
+                  <img src="img/slide.png" class="img-responsive">
+                  <p>DESIGN PROJECTS</p>
+                </div>
+                <div class="col-xs-3 col-sm-2 col">
+                  <img src="img/slide.png" class="img-responsive">
+                  <p>DESIGN PROJECTS</p>
+                </div>
+                <div class="col-xs-3 col-sm-2 col">
+                  <img src="img/slide.png" class="img-responsive">
+                  <p>DESIGN PROJECTS</p>
+                </div>
+                <div class="col-xs-3 col-sm-2 col">
+                  <img src="img/slide.png" class="img-responsive">
+                  <p>DESIGN PROJECTS</p>
+                </div>
+                <div class="col-xs-3 col-sm-2 col">
+                  <img src="img/slide.png" class="img-responsive">
+                  <p>DESIGN PROJECTS</p>
+                </div>
+                <div class="col-xs-3 col-sm-2 col">
+                  <img src="img/slide.png" class="img-responsive">
+                  <p>DESIGN PROJECTS</p>
+                </div> -->
+              <!-- </marquee> -->
+              <!-- </div> -->
+            </div>
+          </div>
+
+          <!-- <div class="item ">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-4 col-sm-3 col">
+                  <img src="img/slide.png" class="img-responsive">
+                  <p>DESIGN PROJECTS</p>
+                </div>
+                <div class="col-xs-4 col-sm-3 col">
+                  <img src="img/slide.png" class="img-responsive">
+                  <p>DESIGN PROJECTS</p>
+                </div>
+                <div class="col-xs-4 col-sm-3 col">
+                  <img src="img/slide.png" class="img-responsive">
+                  <p>DESIGN PROJECTS</p>
+                </div>
+                <div class="col-xs-3 col-sm-3 col visible-sm-block visible-md-block visible-lg-block">
+                  <img src="img/slide.png" class="img-responsive">
+                  <p>DESIGN PROJECTS</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
+
+        </div>
+
+        <!-- Controls -->
+        <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a> -->
+      </div>
+
+      </div>
+
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <!-- <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol> -->
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+        <div class="history"><span>تاريخ الشركة</span></div>
+        <div class="history history-2 visible-xs-block"><span>تاريخ</span></div>
+          <div class="item active">
+            
+            <div class="container-fluid fourth">
+         <div class="row my-autoplay-2" direction="right">
+
+    <div class="year">
+        <div class="row">
+          <div class="">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <p style="background-color: #00aed9"><span>1995</span></p> 
+          </div>
+        </div>
+    </div>
+
+
+     <div class="year">
+        <div class="row" style="visibility:hidden">
+          <div class="">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <p style="background-color: #fec52e"><span>1995</span></p> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <i class="fa fa-long-arrow-down fa-2x" aria-hidden="true"></i><br />
+            <span>of 156 students addmited to CBA</span> <br />
+          </div>
+        </div>
+    </div>
+
+     <div class="year">
+        <div class="row">
+          <div class="">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <p style="background-color: #96c93d"><span>1998</span></p> 
+          </div>
+        </div>
+    </div>
+
+    <div class="year">
+        <div class="row" style="visibility:hidden">
+          <div class="">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <p style="background-color: #fec52e"><span>1995</span></p> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <i class="fa fa-long-arrow-down fa-2x" aria-hidden="true"></i><br />
+            <span>of 156 students addmited to CBA</span> <br />
+          </div>
+        </div>
+    </div>
+
+     <div class="year">
+        <div class="row">
+          <div class="">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <p style="background-color: #96c93d"><span>1998</span></p> 
+          </div>
+        </div>
+    </div>
+
+    <div class="year">
+        <div class="row" style="visibility:hidden">
+          <div class="">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <p style="background-color: #fec52e"><span>1995</span></p> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <i class="fa fa-long-arrow-down fa-2x" aria-hidden="true"></i><br />
+            <span>of 156 students addmited to CBA</span> <br />
+          </div>
+        </div>
+    </div>
+
+     <div class="year">
+        <div class="row">
+          <div class="">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <p style="background-color: #96c93d"><span>1998</span></p> 
+          </div>
+        </div>
+    </div>
+
+    <div class="year">
+        <div class="row" style="visibility:hidden">
+          <div class="">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <p style="background-color: #fec52e"><span>1995</span></p> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <i class="fa fa-long-arrow-down fa-2x" aria-hidden="true"></i><br />
+            <span>of 156 students addmited to CBA</span> <br />
+          </div>
+        </div>
+    </div>
+
+    <div class="year">
+        <div class="row">
+          <div class="">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <p style="background-color: #96c93d"><span>1998</span></p> 
+          </div>
+        </div>
+    </div>
+
+    <div class="year">
+        <div class="row" style="visibility:hidden">
+          <div class="">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <p style="background-color: #fec52e"><span>1995</span></p> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <i class="fa fa-long-arrow-down fa-2x" aria-hidden="true"></i><br />
+            <span>of 156 students addmited to CBA</span> <br />
+          </div>
+        </div>
+    </div>
+
+     
+
+
+
+          
+        </div>
+      </div>
+
+          </div>
+
+
+<!-- <div class="item">
+            
+            <div class="container-fluid fourth">
+        <div class="row">
+          <div class="col-xs-2 col-xs-offset-2 col-sm-1 col-sm-offset-1 year">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+          <div class="col-xs-2 col-xs-offset-2 col-sm-1 col-sm-offset-1 year">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+          <div class="visible-sm-block visible-md-block visible-lg-block col-sm-1 col-sm-offset-1 year">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+          <div class="visible-sm-block visible-md-block visible-lg-block col-sm-1 col-sm-offset-1 year">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+          <div class="visible-sm-block visible-md-block visible-lg-block col-sm-1 col-sm-offset-1 year">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2 col-xs-offset-2 col-sm-1 col-sm-offset-1 year">
+            <p style="background-color: #00aed9"><span>1995</span></p> 
+          </div>
+          <div class="col-xs-2  col-sm-1 year">
+            <p style="background-color: #fec52e"><span>1997</span></p> <br />
+            <i class="fa fa-long-arrow-down fa-2x" aria-hidden="true"></i><br />
+            <span>of 156 students addmited to CBA</span> <br />
+          </div>
+          <div class="col-xs-2 col-sm-1 year">
+            <p style="background-color: #96c93d"><span>1998</span></p> 
+          </div>
+          <div class="col-xs-2 col-sm-1 year">
+            <p style="background-color: #00aed9"><span>1995</span></p> <br />
+            <i class="fa fa-long-arrow-down fa-2x" aria-hidden="true"></i><br />
+            <span>of 156 students addmited to CBA</span> <br />
+          </div>
+          <div class="visible-sm-block visible-md-block visible-lg-block col-xs-2 col-sm-1 year">
+            <p style="background-color: #fec52e"><span>1997</span></p> 
+          </div>
+          <div class="visible-sm-block visible-md-block visible-lg-block col-xs-2 col-sm-1 year">
+            <p style="background-color: #96c93d"><span>1998</span></p> <br />
+            <i class="fa fa-long-arrow-down fa-2x" aria-hidden="true"></i><br />
+            <span>of 156 students addmited to CBA</span> <br />
+          </div>
+          <div class="visible-sm-block visible-md-block visible-lg-block col-sm-1 year">
+            <p style="background-color: #00aed9"><span>1995</span></p> 
+          </div>
+          <div class="visible-sm-block visible-md-block visible-lg-block col-sm-1 year">
+            <p style="background-color: #fec52e"><span>1997</span></p> <br />
+            <i class="fa fa-long-arrow-down fa-2x" aria-hidden="true"></i><br />
+            <span>of 156 students addmited to CBA</span> <br />
+          </div>
+          <div class="visible-sm-block visible-md-block visible-lg-block col-sm-1 year">
+            <p style="background-color: #96c93d"><span>1998</span></p> 
+          </div>
+          
+        </div>
+      </div>
+
+          </div>
+ -->
+
+
+        </div>
+
+        <!-- Controls -->
+        <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a> -->
+      </div>
+</div>
+
+      <!-- <div class="container-fluid fourth">
+        <div class="row">
+          <div class="col-sm-1 col-sm-offset-1 year">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+          <div class="col-sm-1 col-sm-offset-1 year">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+          <div class="col-sm-1 col-sm-offset-1 year">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+          <div class="col-sm-1 col-sm-offset-1 year">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+          <div class="col-sm-1 col-sm-offset-1 year">
+            <span>of 156 students addmited to CBA</span> <br />
+            <i class="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-1 col-sm-offset-1 year">
+            <p style="background-color: #00aed9"><span>1995</span></p> 
+          </div>
+          <div class="col-sm-1 year">
+            <p style="background-color: #fec52e"><span>1997</span></p> <br />
+            <i class="fa fa-long-arrow-down fa-2x" aria-hidden="true"></i><br />
+            <span>of 156 students addmited to CBA</span> <br />
+          </div>
+          <div class="col-sm-1 year">
+            <p style="background-color: #96c93d"><span>1998</span></p> 
+          </div>
+          <div class="col-sm-1 year">
+            <p style="background-color: #00aed9"><span>1995</span></p> <br />
+            <i class="fa fa-long-arrow-down fa-2x" aria-hidden="true"></i><br />
+            <span>of 156 students addmited to CBA</span> <br />
+          </div>
+          <div class="col-sm-1 year">
+            <p style="background-color: #fec52e"><span>1997</span></p> 
+          </div>
+          <div class="col-sm-1 year">
+            <p style="background-color: #96c93d"><span>1998</span></p> <br />
+            <i class="fa fa-long-arrow-down fa-2x" aria-hidden="true"></i><br />
+            <span>of 156 students addmited to CBA</span> <br />
+          </div>
+          <div class="col-sm-1 year">
+            <p style="background-color: #00aed9"><span>1995</span></p> 
+          </div>
+          <div class="col-sm-1 year">
+            <p style="background-color: #fec52e"><span>1997</span></p> <br />
+            <i class="fa fa-long-arrow-down fa-2x" aria-hidden="true"></i><br />
+            <span>of 156 students addmited to CBA</span> <br />
+          </div>
+          <div class="col-sm-1 year">
+            <p style="background-color: #96c93d"><span>1998</span></p> 
+          </div>
+          
+        </div>
+      </div> -->
+      
+<!-- footer section  -->
+      <div class="footer container-fluid">
+      <div class="row">
+        <div class="col-xs-5 col-sm-4 col-sm-offset-1">
+          <p>farm land is a mis-sized agribusiness</p>
+          <p>and land managment company built</p>
+          <p>for today's world, known for its legacy</p>
+          <p>of achievement and innovation in citrus</p>
+          <p>sugarcane, cattle and resource</p>
+          <p>conservation.</p>
+        </div>
+        <div class="col-xs-3 col-sm-2 col-sm-offset-0">
+          <p>Vegetables</p>
+          <p>Fruits and nuts</p>
+          <p>Grain and oilseed</p>
+          <p>Tobacco</p>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-sm-offset-2">
+          <p>22 St. Black road releight</p>
+          <p>farmland@ demolink.org</p>
+          <p>Mon-Sun, 24/7</p>
+          <p>+1 800 559 6580</p>
+        </div>
+        <div class="footer-right2  col-sm-4">
+          <a href=""><i class="fa fa-facebook-square" style="font-size: 25px;padding: 5px;"></i></a>
+          <a href=""><i class="fa fa-twitter-square" style="font-size: 25px;padding: 5px;"></i></a>
+          <a href=""><i class="fa fa-linkedin-square" style="font-size: 25px;padding: 5px;"></i></a>
+          <a href=""><i class="fa fa-google-plus-square" style="font-size: 25px;padding: 5px;"></i></a>
+        </div>
+        <div class="c"></div>
+      </div>
+    </div>
+</div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+
+      <script type="text/javascript" src="js/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.my-single-item').slick({
+          dots: true,
+          dotsClass : 'slick-dots',
+          // autoplay: true,
+          autoplaySpeed: 5000,
+
+    // slidesToShow: 1,
+    // slidesToScroll: 1,
+        });
+
+$('.slick.marquee').slick({
+    speed: 5000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    centerMode: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    slidesToScroll: -1,
+    variableWidth: true,
+    infinite: true,
+    initialSlide: 1,
+    arrows: false,
+    buttons: false
+  });
+
+$('.my-autoplay').slick({
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+
+    responsive: [
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+      }
+    }
+  ]
+
+});
+
+$('.my-autoplay-2').slick({
+  /*slidesToShow: 8,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,*/
+
+speed: 5000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    centerMode: true,
+    cssEase: 'linear',
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: true,
+    initialSlide: 1,
+    arrows: false,
+    buttons: false
+
+
+   /*responsive: [
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+      }
+    }
+  ]*/
+  
+});
+
+$('.my-autoplay-3').slick({
+  slidesToShow: 0,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+        // $('.carousel-indicators').slick-dots();
+      
+      
+    });
+  </script>
+
+  </body>
+
+</html>

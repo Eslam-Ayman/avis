@@ -1,0 +1,55 @@
+.my-single-item {padding-bottom: 20px; overflow: hidden;}
+.second-section .try
+{
+	top: 448px;
+    width: 50%;
+    height: 220px;
+    right: -65px;
+    padding: 3% 5%;
+}
+.second-section .skew {position: static;}
+.second-section .skew a
+{
+         color: #07a4d6; 
+     background-color: transparent; 
+     padding: 5px 20px; 
+     font-size: x-large; 
+     position: static;  
+     transform: skew(0deg); 
+}
+.second-section .cars
+{
+    background-image: none;
+    direction: rtl;
+    padding: 50px;
+    color: #07a4d6;
+    font-size: xx-large;
+    height: auto
+}
+
+@media (max-width: 768px){
+    .second-section .try
+    {
+        overflow: visible;
+        position: absolute;
+        transform: skew(30deg);
+        width: 80%;
+    }
+
+    .second-section .skew
+    {
+        transform: skew(-30deg);
+    }
+
+    .second-section .skew a
+    {
+        float: right;
+    }
+
+    .second-section .skew p, h1
+    {
+        font-size: x-large;
+    padding-right: 15px;
+    }
+
+}
